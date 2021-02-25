@@ -3,63 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>JAIME ZAMORA - 1016074005</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <section>
+    <section class="container container--flex container--horizontal-center container--vertical-center">
         <article>
-            <form action="">
-                <h1>Formulario Taller 1</h1>
-                <p>Los campos obligatorios van seguidos de <strong><abbr title="required"> * </abbr></strong>.</p>
-                <section>
+            <form action="" class="form">
+                <h1 class="form__title form__title--divide">Formulario Taller 1</h1>
+                <p  class="form__description">Los campos obligatorios van seguidos de <strong><abbr title="required" class="form__description--required"> * </abbr></strong>.</p>
+                <section class="form__body">
                     <h2>Informacion de contacto</h2>
-                    <p>
+                    <p class="form__item">
                         <label for="mail">
                             <span>Nombres y apellidos</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="text" id="mail" name="username" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="phonenumber">
                             <span>Teléfono</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="tel" id="phonenumber" name="phonenumber" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="address">
                             <span>Dirección</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="text" id="address" name="address" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="birthday">
                             <span>Fecha nacimiento:</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="date" id="birthday" name="birthday" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="email">
                             <span>Email:</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="email" id="email" name="email" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="password">
                             <span>Password</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="password" id="password" name="password" >
                     </p>
-                    <p>
+                    <p class="form__item">
                         <label for="passwordconfirmation">
                             <span>Password confirmation</span>
-                            <strong><abbr title="required">*</abbr></strong>:
+                            <strong><abbr title="required" class="form__description--required">*</abbr></strong>:
                         </label>
                         <input type="password" id="passwordconfirmation" name="passwordconfirmation" >
+                    </p>
+                    <p class="form__item">
+                        <button class="button" type="submit">Enviar</button>
                     </p>
                 </section>
             </form>
