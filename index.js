@@ -9,7 +9,7 @@ const get = (URL, response) => {
             if (xhr.status === OK) {
                 response(null, JSON.parse(xhr.responseText))
             } else {
-                response(new Error('Se produjo un error al realizar el request'), JSON.parse(xhr.responseText))
+                response(new Error('Se produjo un error al realizar el request'), xhr.responseText)
             }
         }
     }
@@ -17,7 +17,6 @@ const get = (URL, response) => {
     xhr.open('GET', URL);
     xhr.send(null);
 }
-
 
 get('https://swapi.dev/api/planets/20/', (err, response) => {
     if (err) return console.error(`Request failed ${err}`);
