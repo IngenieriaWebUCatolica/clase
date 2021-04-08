@@ -1,0 +1,23 @@
+{
+  "name": "clase",
+  "version": "1.0.0",
+  "description": "Ejemplo npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngenieriaWebUCatolica/clase.git"
+  },
+  "author": "Jaime Zamora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IngenieriaWebUCatolica/clase/issues"
+  },
+  "homepage": "https://github.com/IngenieriaWebUCatolica/clase#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
